@@ -270,7 +270,6 @@ def main(_event, _context):
         ("299497370133", "workflow"),
         ("130871440101", "experience"),
         ("770700576653", "identity"),
-        ("241906670800", "dam_prototype"),
         ("653428163053", "digirati"),
         ("964279923020", "data"),
         ("269807742353", "reporting"),

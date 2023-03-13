@@ -18,12 +18,11 @@ data "aws_iam_policy_document" "allow_assume_role" {
       module.workflow_role.arn,
       module.experience_role.arn,
       module.identity_role.arn,
-      module.dam_prototype_role.arn,
       module.digirati_role.arn,
       module.data_role.arn,
       module.reporting_role.arn,
       module.digitisation_role.arn,
-      "arn:aws:iam::782179017633:role/microsites-costs_report_lambda", # module.microsites_role.arn,
+      module.microsites_role.arn,
     ]
   }
 }

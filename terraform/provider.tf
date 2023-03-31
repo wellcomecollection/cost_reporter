@@ -104,20 +104,6 @@ provider "aws" {
 }
 
 provider "aws" {
-  alias = "dam_prototype"
-
-  region = "eu-west-1"
-
-  assume_role {
-    role_arn = "arn:aws:iam::241906670800:role/dam_prototype-developer"
-  }
-
-  default_tags {
-    tags = local.default_tags
-  }
-}
-
-provider "aws" {
   alias = "digirati"
 
   region = "eu-west-1"
@@ -166,6 +152,20 @@ provider "aws" {
 
   assume_role {
     role_arn = "arn:aws:iam::404315009621:role/digitisation-developer"
+  }
+
+  default_tags {
+    tags = local.default_tags
+  }
+}
+
+provider "aws" {
+  alias = "microsites"
+
+  region = "eu-west-1"
+
+  assume_role {
+    role_arn = "arn:aws:iam::782179017633:role/microsites-developer"
   }
 
   default_tags {

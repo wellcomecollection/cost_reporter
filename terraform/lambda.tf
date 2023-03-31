@@ -9,7 +9,7 @@ data "archive_file" "costs_report" {
 }
 
 module "costs_report_lambda" {
-  source = "../../monitoring/terraform/modules/lambda"
+  source = "./lambda"
 
   name        = "costs_report"
   description = "Produces a monthly Slack report of our cloud billing costs"
